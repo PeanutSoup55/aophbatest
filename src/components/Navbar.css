@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    flex: 1; /* Each section takes equal space */
+    text-align: center; /* Center text within each section */
+    padding: 10px; /* Add some padding */
+}
+
+.navbar-left{
+}
+.navbar-left img{
+    width: 300px;
+}
+
+.navbar-center{
+
+}
+.navbar-center ul{
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0px;
+    justify-content: center;
+}
+.navbar-center a{
+    text-decoration: none;
+    color: black;
+    font-family: 'SUSE';
+    padding: 15px;
+    font-weight: 700;
+}
+
+.navbar-right{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
