@@ -1,43 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
-.navbar{
+
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: antiquewhite;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    position: sticky;
+    top: 0;
+    font-family: 'SUSE';
+    font-weight: 700;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.5);
 }
 
-.navbar-left, .navbar-center, .navbar-right {
-    flex: 1; /* Each section takes equal space */
-    text-align: center; /* Center text within each section */
-    padding: 10px; /* Add some padding */
+.logo, ul, .navbar-right{
+    flex: 1;
+    text-align: center;
 }
 
-.navbar-left{
-}
-.navbar-left img{
-    width: 300px;
-}
-
-.navbar-center{
+img {
+    width: 250px;
 
 }
-.navbar-center ul{
-    list-style: none;
+
+nav ul {
     display: flex;
     padding-inline-start: 0px;
     justify-content: center;
 }
-.navbar-center a{
+
+nav ul li {
+    list-style: none; 
+ }
+
+ nav ul li a {
+    display: block;
     text-decoration: none;
-    color: black;
-    font-family: 'SUSE';
-    padding: 15px;
-    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px 10px 15px;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
 }
 
-.navbar-right{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+nav ul li a:not(.active):hover {
+    background-color:#bae7af ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    padding-inline-start: 0px;
+
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #363636;
+    border-radius: 0.2rem;
+}
+
+
+.search-bar input{
+    border-radius: 40px;
+    border: 1px solid rgb(166, 212, 0);
+    padding: 10px;
+    width: 50%;
+}
+.search-bar button{
+    background-color: #ffffff; /* Button background color */
+    border: none; /* Remove default border */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .navbar-right{
+        display: none;
+    
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    nav{
+        background-color: #ffffff;
+    }
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+    .navbar-right{
+        display: none;
+    
+    }
+    nav .logo{
+        margin-top: 10px;
+    }
 }
