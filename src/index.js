@@ -9,7 +9,7 @@ import Contact from './pages/Contact.js'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/Home',
     element: <Home />,
   },
   {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

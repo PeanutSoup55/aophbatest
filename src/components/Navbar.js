@@ -5,6 +5,8 @@ import './Navbar.css';
 import logoAO from '../images/logoAO.png'
 import {IoSearch } from 'react-icons/io5';
 import { useState } from 'react';
+
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -12,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
      
      <div className="logo">
-     <Link to="/">
+     <Link to="/Home">
         <img src={logoAO} alt="Logo" className="navbar-logo" />
       </Link>
      </div>
@@ -27,7 +29,7 @@ const Navbar = () => {
       
 
       <ul className={menuOpen ? "open" : ""}>
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/Home">Home</Link></li>
         <li><Link to="/Sponsor">Sponsor</Link></li>
         <li><Link to="/Events">Events</Link></li>
         <li><Link to="/Contact">Contact</Link></li>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.wwa-container {
+    height: auto;
+    font-family: 'SUSE';
+    position: relative;
+    overflow: hidden; 
+  }
+  
+.wwa-container video {
+    width: 100%;
+    object-fit: contain;
+}
+.wwa-container .content {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: right;    
+    color: rgb(0, 0, 0);
+}
+.wwa-container h1 {
+    font-size: 24px;
+
+}
+.wwa-container p {
+    font-size: 14px;
+    width: 500px;
+    font-weight: 600;
+}
+.wwa-container .wwa-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.wwd-container {
+    height: auto;
+    font-family: 'SUSE';
+    position: relative;
+    overflow: hidden; 
+  }
+  
+.wwd-container video {
+    width: 100%;
+    object-fit: contain;
+}
+.wwd-container .wwd-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;    
+    color: rgb(0, 0, 0);
+}
+.wwd-container h1 {
+    font-size: 24px;
+
+}
+.wwd-container p {
+    font-size: 14px;
+    width: 500px;
+    font-weight: 600;
+}
+.wwd-container .wwd-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+@media (max-width: 900px) {
+    .wwa-container .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;    
+        color: rgb(0, 0, 0);
+    }
+    .wwa-container h1 {
+        font-size: 24px;
+    
+    }
+    .wwa-container p {
+        font-size: 14px;
+        width: 500px;
+        font-weight: 600;
+    }
+    .wwa-container .wwa-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .wwd-container .wwd-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;    
+        color: rgb(0, 0, 0);
+    }
+    .wwd-container h1 {
+        font-size: 24px;
+    
+    }
+    .wwd-container p {
+        font-size: 14px;
+        width: 500px;
+        font-weight: 600;
+    }
+    .wwd-container .wwd-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    
+}
+
+
+.bs-container {
+    display: flex;
+    height: auto;
+    font-family: 'SUSE';
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.bs-left{
+    padding: 20px;
+}
+.bs-left h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+.bs-left p{
+    font-size: 17px;
+    font-weight: 600;
+    color: #949494;
+}
+.bs-right{
+    padding: 20px;
+}
+.bs-right button{
+    background-color: #ffffff; /* Button background color */
+    border: none; /* Remove default border */
+    color: rgb(166, 212, 0); /* Text color */
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
