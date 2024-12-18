@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
+
 .wwa-container {
     height: auto;
     font-family: 'SUSE';
@@ -76,62 +77,6 @@
 }
 
 
-@media (max-width: 900px) {
-    .wwa-container .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;    
-        color: rgb(0, 0, 0);
-    }
-    .wwa-container h1 {
-        font-size: 24px;
-    
-    }
-    .wwa-container p {
-        font-size: 14px;
-        width: 500px;
-        font-weight: 600;
-    }
-    .wwa-container .wwa-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.8);
-    }
-
-    .wwd-container .wwd-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;    
-        color: rgb(0, 0, 0);
-    }
-    .wwd-container h1 {
-        font-size: 24px;
-    
-    }
-    .wwd-container p {
-        font-size: 14px;
-        width: 500px;
-        font-weight: 600;
-    }
-    .wwd-container .wwd-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.8);
-    }
-    
-}
-
-
 .bs-container {
     display: flex;
     height: auto;
@@ -165,4 +110,274 @@
     font-size: 40px;
 }
 
+@media (max-width: 900px) {
+    /* who we are */
+    .wwa-container {
+        height: 800px;
+    }
+    .wwa-container .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;    
+        color: rgb(0, 0, 0);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.404); /* Semi-transparent background */
+        border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        backdrop-filter: blur(10px);
+        padding: 20px;
+    }
+    .wwa-container h1 {
+        font-size: 24px;
+        position: relative;
+        color: #000000;
+    }
+    .wwa-container p {
+        position: relative;
+        font-size: 14px;
+        width: 500px;
+        font-weight: 600;
+        color: #000000;
+    }
+    .wwa-container video{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: auto;
+        height: 100%; 
+        transform: translateX(-50%); 
+        object-fit: cover;
+    }
+    .wwa-container .wwa-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(148, 148, 148, 0.8) ;
 
+    }   
+    .wwa-overlay{
+        z-index: 1;
+    }
+
+
+    /* what we do */
+    .wwd-container {
+        height: 800px;
+    }
+    .wwd-container .wwd-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;    
+        color: rgb(0, 0, 0);
+        z-index: 2;
+        background: rgba(255, 255, 255, 0.404); /* Semi-transparent background */
+        border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        backdrop-filter: blur(10px);
+        padding: 20px;
+    }
+    .wwd-container h1 {
+        font-size: 24px;
+        position: relative;
+        color: #000000;
+    }
+    .wwd-container p {
+        position: relative;
+        font-size: 14px;
+        width: 500px;
+        font-weight: 600;
+        color: #000000;
+    }
+    .wwd-container video{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: auto;
+        height: 100%; 
+        transform: translateX(-50%); 
+        object-fit: cover;
+    }
+    .wwd-container .wwd-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(148, 148, 148, 0.8) ;
+
+    }   
+ 
+    .wwd-overlay{
+        z-index: 1;
+    }
+
+
+    /* our stragety */
+    .strategy-container{
+        flex-direction: column;
+    }
+
+    /* breakdown */
+    .bs-left h1{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .bs-left p{
+        font-size: 12px;
+        font-weight: 600;
+        color: #949494;
+    }
+    .bs-right button{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .wwa-container .content{
+        width: 80%;
+    }
+    .wwa-container .content p {
+        width: auto;
+    }
+    .wwd-container .wwd-content{
+        width: 80%;
+    }
+    .wwd-container .wwd-content p {
+        width: auto;
+    }
+}
+
+
+
+
+
+.container .strategy-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.strategy-container {
+    margin: 100px auto;
+    display: flex;
+    width: 70%;
+    height: auto;
+    font-family: 'SUSE';
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+.strategy-left, .strategy-right {
+    flex: 1;
+    margin: 20px;
+}
+.strategy-right img{
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+}
+.strategy-left h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.strategy-left h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #949494;
+}
+.strategy-left p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+.sponsor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 90%;
+    height: auto;
+    font-family: 'SUSE';
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px;
+    background-image: url('../images/bg7.png');
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sponsor-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sponsor-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px; /* Adjust width as needed */
+}
+
+.sponsor-top h1{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.sponsor-logo {
+    width: 150px; /* Make logo responsive */
+    height: 150px;
+    margin-bottom: 10px;
+}
+.sponsor-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.sponsor-card h3{
+    font-size: 14px;
+    text-align: left;
+    color: #5a5a5a;
+    font-weight: 500;
+}
+.sponsor-bottom{
+    margin-top: 30px;
+}
+.sponsor-bottom h1{
+    font-size: 20px;
+    text-align: center;
+}
+.sponsor-bottom p{
+    font-size: 14px;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.line {
+    border-top: 1px solid rgb(114, 114, 114); /* Change color and thickness as needed */
+    width: 50%; /* Adjust width as needed */
+    margin: 20px 0; /* Add margin for spacing */
+}
