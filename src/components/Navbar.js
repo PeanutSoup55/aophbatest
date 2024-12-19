@@ -13,14 +13,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
      
-     <div className="logo">
-     <Link to="/">
-        <img src={logoAO} alt="Logo" className="navbar-logo" />
-      </Link>
-     </div>
-
+      <div className="logo">
+      <Link to="/">
+          <img src={logoAO} alt="Logo" className="navbar-logo" />
+        </Link>
+      </div>
       
-
       <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
@@ -30,7 +28,7 @@ const Navbar = () => {
 
       <ul className={menuOpen ? "open" : ""}>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/Sponsor">Sponsor</Link></li>
+        <li><Link to="/Sponsors">Sponsor</Link></li>
         <li><Link to="/Events">Events</Link></li>
         <li><Link to="/Contact">Contact</Link></li>
       </ul>

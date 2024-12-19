@@ -8,10 +8,8 @@ import bg2 from '../images/bg2.mp4';
 import bg3 from '../images/bg3.mp4';
 import bg4 from '../images/bg4.mp4';
 import strat from '../images/strat.png';
-import sand from '../images/sand.png';
-import profile from '../images/profile.jpg';
-import shein from '../images/shein.jpg';
-import spark from '../images/spark.png';
+import sponsors from '../components/Sponsor.js';
+
 import { FaArrowAltCircleDown } from 'react-icons/fa';
 
 const Home = () => {
@@ -47,29 +45,6 @@ const Home = () => {
       window.removeEventListener('resize', updateVideo);
     };
   }, []);
-
-  const sponsors = [
-    {
-      name: 'AstraZeneca',
-      image: sand,
-      desc: 'A proud supporter since 2023'
-    },
-    {
-      name: 'Profile',
-      image: profile,
-      desc: 'www.bmo.com/'
-    },
-    {
-      name: 'Shein',
-      image: shein,
-      desc: 'www.bmo.com/'
-    },
-    {
-      name: 'Spark',
-      image: spark,
-      desc: 'www.bmo.com/'
-    },
-  ];
 
 
   
